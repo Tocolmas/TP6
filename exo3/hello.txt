@@ -1,0 +1,14 @@
+# Exercice 3
+## Question 1
+
+Quand nous lançons le programme, nous constatons que le processus fils lit les 10 premiers caractères et que le processus père lit les 5 suivants au lieu de recommencer au début.
+
+Ce qui nous donne : 
+```
+Bonjour to
+ut le
+```
+Nous devons donc faire en sorte que les deux processus recommencent à lire au début.
+
+## Point 2
+Pour corriger cette erreur nous pouvons ouvrir le fichier deux fois de sorte à avoir deux file descriptors différents et ainsi pouvoir recommencer la lecture au début du fichier.
